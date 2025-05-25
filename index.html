@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secret Email Challenge</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+    input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      margin-top: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 15px;
+      background: #4facfe;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Secret Riddle Challenge</h2>
+    <p>Only true legends can unlock the answer. Enter your email to begin:</p>
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+      <input type="email" name="email" required placeholder="Enter your email"><br>
+      <button type="submit">Reveal the Riddle</button>
+    </form>
+  </div>
+</body>
+</html>
