@@ -10,13 +10,15 @@
       text-align: center;
       padding: 50px;
     }
+
     .box {
       background: white;
       padding: 30px;
       border-radius: 10px;
       display: inline-block;
-      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     }
+
     input[type="email"] {
       padding: 10px;
       width: 250px;
@@ -24,24 +26,35 @@
       border-radius: 5px;
       border: 1px solid #ccc;
     }
+
     button {
       padding: 10px 20px;
       margin-top: 15px;
-      background: #4facfe;
       border: none;
+      background-color: #4facfe;
       color: white;
       border-radius: 5px;
       cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00c6ff;
     }
   </style>
 </head>
 <body>
   <div class="box">
-    <h2>Secret Riddle Challenge</h2>
-    <p>Only true legends can unlock the answer. Enter your email to begin:</p>
-    <form action="https://formsubmit.co/your@email.com" method="POST">
-      <input type="email" name="email" required placeholder="Enter your email"><br>
-      <button type="submit">Reveal the Riddle</button>
+    <h2>Enter your email to unlock the secret</h2>
+    <form action="https://formsubmit.co/habishek9927@gmail.com" method="POST">
+      <input type="email" name="email" placeholder="Your Email" required>
+      
+      <!-- Optional: Disable CAPTCHA -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- Optional: Redirect after submission -->
+      <input type="hidden" name="_next" value="https://mchabi901.github.io/finder/thank-you.html">
+
+      <button type="submit">Submit</button>
     </form>
   </div>
 </body>
