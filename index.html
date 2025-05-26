@@ -1,61 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Secret Email Challenge</title>
+  <meta charset="UTF-8" />
+  <title>My Profile</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: #333;
+      font-family: Arial;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
       text-align: center;
-      padding: 50px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    .box {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      display: inline-block;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    }
-
-    input[type="email"] {
-      padding: 10px;
-      width: 250px;
-      margin-top: 15px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-
-    button {
-      padding: 10px 20px;
-      margin-top: 15px;
-      border: none;
-      background-color: #4facfe;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #00c6ff;
+    img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h2>Enter your email to unlock the secret</h2>
-    <form action="https://formsubmit.co/habishek9927@gmail.com" method="POST">
-      <input type="email" name="email" placeholder="Your Email" required>
-      
-      <!-- Optional: Disable CAPTCHA -->
-      <input type="hidden" name="_captcha" value="false">
-
-      <!-- Optional: Redirect after submission -->
-      <input type="hidden" name="_next" value="https://mchabi901.github.io/finder/thank-you.html">
-
-      <button type="submit">Submit</button>
-    </form>
+  <div class="card">
+    <img src="myphoto.jpg" alt="My Photo" />
+    <h2>Habishek</h2>
+    <p><strong>Age:</strong> 19</p>
+    <p><strong>College:</strong> RD National College</p>
+    <p><strong>Course:</strong> Cybersecurity</p>
   </div>
 </body>
 </html>
